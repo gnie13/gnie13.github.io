@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gavin Nienke — Software Engineer</title>
+<meta name="description" content="Gavin Nienke — Software Engineering student at Iowa State University. Full-stack development, APIs, and AI integration.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="site-header" id="top">
+  <nav class="nav container">
+    <a href="#top" class="logo">GN<span class="dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero container">
+    <p class="eyebrow reveal">Software Engineering @ Iowa State University</p>
+    <h1 class="reveal">
+      Hi, I'm <span class="highlight">Gavin Nienke</span>.<br>
+      I build full-stack software<br> that solves real problems.
+    </h1>
+    <p class="hero-sub reveal">
+      Graduating May 2027 with hands-on experience shipping production web apps,
+      integrating AI services, and automating business processes for real companies.
+      Currently seeking <strong>internship &amp; new-grad software engineering roles</strong>.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#experience" class="btn btn-primary">View My Experience</a>
+      <a href="mailto:gdnienke@gmail.com" class="btn btn-ghost">Get In Touch</a>
+    </div>
+    <div class="hero-meta reveal">
+      <a href="https://www.linkedin.com/in/gnien" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <span class="sep">/</span>
+      <a href="https://github.com/gnie13" target="_blank" rel="noopener" id="githubLink">GitHub ↗</a>
+      <span class="sep">/</span>
+      <span>Ames, Iowa</span>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section container">
+    <div class="section-head reveal">
+      <span class="section-num">01</span>
+      <h2>Work Experience</h2>
+    </div>
+
+    <div class="timeline">
+      <article class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="role-head">
+            <div>
+              <h3>Software Engineering Intern</h3>
+              <p class="org">Empirical Technologies &middot; Sioux City, IA</p>
+            </div>
+            <span class="date-badge">Summer 2026</span>
+          </div>
+          <ul class="bullets">
+            <li>Developed full-stack web applications using <strong>C#, React, MySQL, and MUI</strong>.</li>
+            <li>Built an autonomous document scanner powered by <strong>Azure Document Intelligence</strong> and <strong>GPT-4o</strong> to automate redundant document-processing tasks.</li>
+            <li>Transitioned multiple Power BI reports into interactive web applications that display and update data in real time.</li>
+            <li>Integrated applications into existing systems while securely handling data and minimizing service downtime.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">C#</span><span class="tag">React</span><span class="tag">MySQL</span><span class="tag">MUI</span><span class="tag">Azure AI</span><span class="tag">GPT-4o</span><span class="tag">Power BI</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="role-head">
+            <div>
+              <h3>Field Engineer Intern</h3>
+              <p class="org">JFECC &middot; Geneseo, IL</p>
+            </div>
+            <span class="date-badge">Summer 2025</span>
+          </div>
+          <ul class="bullets">
+            <li>Developed an automated Excel tool to print 5,000+ unique labels, reducing manual processing time and minimizing errors.</li>
+            <li>Maintained daily budget tracking in a database that stored detailed production information, and offered data-backed production improvement suggestions.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Excel Automation</span><span class="tag">VBA</span><span class="tag">Database Tracking</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="role-head">
+            <div>
+              <h3>Software Refactoring Research Assistant</h3>
+              <p class="org">ISU Honors Program &middot; Ames, IA &middot; under Prof. Judith Islam</p>
+            </div>
+            <span class="date-badge">Spring 2024</span>
+          </div>
+          <ul class="bullets">
+            <li>Conducted maintenance and evolution of aging programs in <strong>Java</strong>.</li>
+            <li>Employed object-oriented strategies to reduce code complexity and runtime without altering the program's primary function.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Java</span><span class="tag">Software Refactoring</span><span class="tag">OOP</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <div class="section-head reveal">
+      <span class="section-num">02</span>
+      <h2>Projects</h2>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card reveal">
+        <div class="project-card-top">
+          <h3>Flight Display System</h3>
+          <span class="date-badge subtle">Fall 2025</span>
+        </div>
+        <p>A real-time flight information system integrating a public flight data API to display live schedules, statuses, and route information. Backed by a Spring Boot service with RESTful APIs and MySQL for user accounts and reservations.</p>
+        <div class="tag-row">
+          <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">React + Vite</span><span class="tag">Tailwind CSS</span><span class="tag">MySQL</span><span class="tag">REST API</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card-top">
+          <h3>Spotify API Web Tracker</h3>
+          <span class="date-badge subtle">Fall 2024</span>
+        </div>
+        <p>A music analytics tracker built on the Spotify API that surfaces personal listening trends — top artists, songs, and albums by time period, plus a recently-played feed.</p>
+        <div class="tag-row">
+          <span class="tag">JavaScript</span><span class="tag">MongoDB</span><span class="tag">HTML</span><span class="tag">Spotify API</span>
+        </div>
+      </article>
+    </div>
+
+    <p class="projects-note reveal">More on <a href="https://github.com/gnie13" target="_blank" rel="noopener">GitHub ↗</a></p>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section container">
+    <div class="section-head reveal">
+      <span class="section-num">03</span>
+      <h2>Education</h2>
+    </div>
+
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <h3>Iowa State University</h3>
+        <p class="org">B.S. Software Engineering, Minor in Spanish</p>
+        <p class="edu-meta">Graduation: May 2027 &nbsp;&middot;&nbsp; GPA: 3.7 &nbsp;&middot;&nbsp; Dean's List</p>
+      </div>
+      <div class="edu-card reveal">
+        <h3>Universidad de Extremadura (UEx)</h3>
+        <p class="org">Study Abroad &middot; Cáceres, Spain</p>
+        <p class="edu-meta">Spring 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section id="leadership" class="section container">
+    <div class="section-head reveal">
+      <span class="section-num">04</span>
+      <h2>Leadership &amp; Involvement</h2>
+    </div>
+
+    <div class="lead-grid">
+      <div class="lead-card reveal">
+        <h3>Resident Assistant</h3>
+        <p class="org">Department of Residence &middot; Ames, IA &middot; Spring–Fall 2025</p>
+        <ul class="bullets">
+          <li>Created a welcoming environment for 50+ residents by organizing community-building events.</li>
+          <li>Provided on-call support for residents during many nights throughout the semester.</li>
+        </ul>
+      </div>
+      <div class="lead-card reveal">
+        <h3>First-Year Honors Program Mentor</h3>
+        <p class="org">ISU Honors Program &middot; Ames, IA &middot; Fall 2024</p>
+        <ul class="bullets">
+          <li>Co-led a class of 12 students twice weekly, providing academic guidance during the transition to college life.</li>
+          <li>Designed and led interactive lessons promoting academic success, time management, and engagement.</li>
+        </ul>
+      </div>
+      <div class="lead-card reveal">
+        <h3>Competitive Coordinator</h3>
+        <p class="org">ISU Weight Club &middot; Ames, IA &middot; Fall 2025</p>
+        <ul class="bullets">
+          <li>Coordinated competitive lifting events for over 100 club members.</li>
+          <li>Managed logistics including scheduling, registration, and communication with athletes and federations.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <div class="section-head reveal">
+      <span class="section-num">05</span>
+      <h2>Skills</h2>
+    </div>
+
+    <div class="skills-grid reveal">
+      <div class="skill-col">
+        <h4>Advanced</h4>
+        <div class="tag-row">
+          <span class="tag lg">Java</span><span class="tag lg">JavaScript</span><span class="tag lg">HTML</span><span class="tag lg">CSS</span><span class="tag lg">C</span><span class="tag lg">React</span><span class="tag lg">MySQL</span>
+        </div>
+      </div>
+      <div class="skill-col">
+        <h4>Proficient</h4>
+        <div class="tag-row">
+          <span class="tag lg">C#</span><span class="tag lg">Power BI</span><span class="tag lg">Excel Automation</span><span class="tag lg">Python</span><span class="tag lg">PyTorch</span>
+        </div>
+      </div>
+      <div class="skill-col">
+        <h4>Languages</h4>
+        <div class="tag-row">
+          <span class="tag lg">English (Native)</span><span class="tag lg">Spanish — Advanced reading &amp; writing</span><span class="tag lg">Spanish — Proficient speaking</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container contact-section">
+    <div class="contact-box reveal">
+      <span class="section-num">06</span>
+      <h2>Let's Work Together</h2>
+      <p>I'm currently looking for internship and new-grad software engineering opportunities for after graduation in May 2027. If you think I'd be a good fit for your team, I'd love to hear from you.</p>
+      <div class="contact-links">
+        <a href="mailto:gdnienke@gmail.com" class="btn btn-primary">gdnienke@gmail.com</a>
+        <a href="tel:3099457427" class="btn btn-ghost">309-945-7427</a>
+      </div>
+      <div class="contact-socials">
+        <a href="https://www.linkedin.com/in/gnien" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/gnie13" target="_blank" rel="noopener" id="githubLink2">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Gavin Nienke. Built from scratch.</p>
+    <a href="#top" class="back-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
