@@ -1,41 +1,18 @@
-# Gavin Nienke — Portfolio
+# gnie13.github.io
 
-A single-page personal portfolio site. Plain HTML/CSS/JS, no build step, no dependencies.
+Source for my personal portfolio, live at [gnie13.github.io](https://gnie13.github.io).
 
-## Structure
+Built it to have somewhere to point recruiters/LinkedIn other than a PDF — figured a quick site would show more than a resume can. Plain HTML/CSS/JS on purpose, no framework or build step, since it's just one page and I'd rather spend the time on content than tooling.
 
-- `index.html` — page content and structure
-- `styles.css` — all styling (dark theme by default, respects light OS preference)
-- `script.js` — mobile nav toggle + scroll-reveal animations
+- `index.html` — everything on the page
+- `styles.css` — styling
+- `script.js` — mobile nav + the fade-in-on-scroll bits
 
-## Running locally
+To run it locally just open `index.html`, or `npx serve .` if you want it on a local server.
 
-Just open `index.html` in a browser, or serve it locally:
+It's deployed through GitHub Pages straight off `main`, so pushing to main updates the live site.
 
-```
-npx serve .
-```
-
-## Deploying to GitHub Pages
-
-1. Create a new GitHub repo (e.g. `gnie13.github.io` for a root-domain site, or any name like `portfolio` for a project page).
-2. Push this folder to that repo:
-   ```
-   git init
-   git add .
-   git commit -m "Initial portfolio site"
-   git branch -M main
-   git remote add origin https://github.com/gnie13/<repo-name>.git
-   git push -u origin main
-   ```
-3. In the repo on GitHub: **Settings → Pages → Source → Deploy from branch → main / (root)**.
-4. Your site will be live at:
-   - `https://gnie13.github.io/` (if the repo is named `gnie13.github.io`), or
-   - `https://gnie13.github.io/<repo-name>/` (for any other repo name).
-5. Add that URL to your LinkedIn profile ("Featured" or "Contact info → Website") and pin the repo on your GitHub profile.
-
-## Things to customize later
-
-- Swap the placeholder GitHub project links for direct links to your Flight Display System and Spotify Tracker repos once they're public.
-- Optionally add a downloadable resume PDF (`resume.pdf` in this folder) and link it from the hero section.
-- Update copy as your internship search progresses (e.g. once you have a Summer 2027 internship, add it above Empirical Technologies).
+### TODO
+- link the actual repos for the Flight Display System and Spotify tracker once they're cleaned up
+- maybe add a resume PDF download
+- keep experience section current as I apply to internships this year
