@@ -36,10 +36,5 @@ if (heroImg) {
   heroImg.addEventListener('error', () => heroPhoto.classList.add('is-empty'));
 }
 
-// dates
-const now = new Date();
-document.getElementById('year').textContent = now.getFullYear();
-const nowDate = document.getElementById('nowDate');
-if (nowDate) {
-  nowDate.textContent = now.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
-}
+// footer year
+document.getElementById('year').textContent = new Date().getFullYear();

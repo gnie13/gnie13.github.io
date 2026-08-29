@@ -20,9 +20,10 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#leadership">Leadership</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
@@ -34,21 +35,19 @@
   <section class="hero container">
     <div class="hero-inner">
       <div class="hero-text">
-        <p class="eyebrow reveal">— Software Engineering at Iowa State</p>
+        <p class="eyebrow reveal">Software Engineering @ Iowa State University</p>
         <h1 class="reveal">
-          I'm <span class="mark">Gavin Nienke</span>, and I like
-          building software people actually use.
+          Hi, I'm <span class="mark">Gavin Nienke</span>.<br>
+          I build full-stack software<br> that solves real problems.
         </h1>
-        <!-- DRAFT COPY: rewrite this in your own voice -->
         <p class="hero-sub reveal">
-          Senior at Iowa State finishing a B.S. in Software Engineering (plus a Spanish minor).
-          The last two summers I shipped production web apps and internal tools for real
-          companies &mdash; most recently a document scanner that reads and files paperwork on
-          its own. Looking for <strong>new-grad software roles</strong> for after I graduate in May 2027.
+          Graduating May 2027 with hands-on experience shipping production web apps,
+          integrating AI services, and automating business processes for real companies.
+          Currently seeking <strong>internship &amp; new-grad software engineering roles</strong>.
         </p>
         <div class="hero-actions reveal">
-          <a href="#experience" class="btn btn-primary">See what I've built</a>
-          <a href="mailto:gdnienke@gmail.com" class="btn btn-ghost">Say hi</a>
+          <a href="#experience" class="btn btn-primary">View My Experience</a>
+          <a href="mailto:gdnienke@gmail.com" class="btn btn-ghost">Get In Touch</a>
         </div>
         <div class="hero-meta reveal">
           <a href="https://www.linkedin.com/in/gnien" target="_blank" rel="noopener">LinkedIn ↗</a>
@@ -61,66 +60,8 @@
 
       <figure class="hero-photo reveal" id="heroPhoto">
         <img src="assets/gavin.jpg" alt="Gavin Nienke" width="440" height="550">
-        <!-- DRAFT CAPTION: swap in your own -->
-        <figcaption>Cáceres, Spain &mdash; spring 2026.</figcaption>
       </figure>
     </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section container">
-    <div class="section-head reveal">
-      <h2>About</h2>
-    </div>
-    <!-- DRAFT COPY: replace the [bracketed] bits and fix the voice -->
-    <div class="prose reveal">
-      <p>
-        I got into software because [reason &mdash; e.g. I wanted to automate a tedious job and
-        realized I liked the automating more than the job]. Since then it's been the thing I
-        reach for whenever something around me is slower than it should be: labels that took
-        hours to print, reports trapped in a PDF, paperwork nobody wanted to type in.
-      </p>
-      <p>
-        Outside of code I [lift competitively and coordinate meets for the ISU Weight Club],
-        spent spring 2026 studying in Cáceres, Spain, and spent 2025 as a resident assistant
-        for a floor of 50. [One more sentence that actually sounds like you.]
-      </p>
-    </div>
-  </section>
-
-  <!-- RIGHT NOW -->
-  <section id="now" class="section container">
-    <div class="section-head reveal">
-      <h2>Right now</h2>
-    </div>
-    <!-- DRAFT CONTENT: edit this list directly. Fill the [brackets]. -->
-    <dl class="now-grid reveal">
-      <div class="now-item">
-        <dt>Where</dt>
-        <dd>Ames, Iowa &mdash; back from a semester at Universidad de Extremadura in Cáceres, Spain</dd>
-      </div>
-      <div class="now-item">
-        <dt>Building</dt>
-        <dd>A meal-planning app on Spring Boot that pulls real nutrition data from the USDA API</dd>
-      </div>
-      <div class="now-item">
-        <dt>Reading</dt>
-        <dd>[what you're reading]</dd>
-      </div>
-      <div class="now-item">
-        <dt>Listening</dt>
-        <dd>[top artist this month] &mdash; <a href="https://github.com/gnie13/Stat_Tracker" target="_blank" rel="noopener">from the Spotify tracker I built</a></dd>
-      </div>
-      <div class="now-item">
-        <dt>Training</dt>
-        <dd>[current lifting focus] &mdash; I coordinate competitive meets for ISU Weight Club</dd>
-      </div>
-      <div class="now-item">
-        <dt>Learning</dt>
-        <dd>Spanish, seriously enough to minor in it</dd>
-      </div>
-    </dl>
-    <p class="now-note reveal">Last updated <span id="nowDate"></span></p>
   </section>
 
   <!-- EXPERIENCE -->
@@ -207,8 +148,6 @@
           <span class="date-badge subtle">Fall 2025</span>
         </div>
         <p>A real-time flight information system integrating a public flight data API to display live schedules, statuses, and route information. Backed by a Spring Boot service with RESTful APIs and MySQL for user accounts and reservations.</p>
-        <!-- DRAFT ASIDE: one line on why you built it / what was hard -->
-        <p class="project-why">[Why I built it, in one sentence.]</p>
         <div class="tag-row">
           <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">React + Vite</span><span class="tag">Tailwind CSS</span><span class="tag">MySQL</span><span class="tag">REST API</span>
         </div>
@@ -221,7 +160,6 @@
           <span class="date-badge subtle">Fall 2025</span>
         </div>
         <p>Improved a YOLOv8 segmentation model's ability to detect small, easily-missed water bodies (narrow streams, ponds, jagged coastlines) in satellite imagery. Scaled input resolution from 640px to 1024px, added domain-specific augmentations (rotation and flips) to prevent geographic overfitting, and extended training from 10 to 50 epochs. Result: a 33% gain in detection quality (mAP50) and a 26% gain in recall, at the cost of a small drop in inference speed.</p>
-        <p class="project-why">[Why I built it, in one sentence.]</p>
         <div class="tag-row">
           <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">YOLOv8</span><span class="tag">Computer Vision</span><span class="tag">Ultralytics</span>
         </div>
@@ -234,7 +172,6 @@
           <span class="date-badge subtle">Fall 2024</span>
         </div>
         <p>A music analytics tracker built on the Spotify API that surfaces personal listening trends: top artists, songs, and albums by time period, plus a recently-played feed.</p>
-        <p class="project-why">[Why I built it, in one sentence.]</p>
         <div class="tag-row">
           <span class="tag">JavaScript</span><span class="tag">MongoDB</span><span class="tag">HTML</span><span class="tag">Spotify API</span>
         </div>
@@ -247,7 +184,6 @@
           <span class="date-badge subtle">Fall 2026</span>
         </div>
         <p>A meal-logging and nutrition-tracking app that pulls real nutrition data (calories, protein, carbs, fat) from the USDA FoodData Central API instead of requiring manual entry. Logs foods against meals by date and meal type, backed by Spring Data JPA and H2.</p>
-        <p class="project-why">[Why I built it, in one sentence.]</p>
         <div class="tag-row">
           <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Spring Data JPA</span><span class="tag">H2</span><span class="tag">USDA API</span>
         </div>
@@ -343,8 +279,8 @@
   <!-- CONTACT -->
   <section id="contact" class="section container contact-section">
     <div class="contact-box reveal">
-      <h2>Let's talk</h2>
-      <p>I'm looking for new-grad software engineering roles for after I graduate in May 2027. If you think I'd fit your team, I'd like to hear from you.</p>
+      <h2>Let's Work Together</h2>
+      <p>I'm currently looking for internship and new-grad software engineering opportunities for after graduation in May 2027. If you think I'd be a good fit for your team, I'd love to hear from you.</p>
       <div class="contact-links">
         <a href="mailto:gdnienke@gmail.com" class="btn btn-primary">gdnienke@gmail.com</a>
         <a href="tel:3099457427" class="btn btn-ghost">309-945-7427</a>
@@ -359,7 +295,7 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>&copy; <span id="year"></span> Gavin Nienke &middot; Ames, Iowa</p>
+    <p>&copy; <span id="year"></span> Gavin Nienke. Built from scratch.</p>
     <a href="#top" class="back-top">Back to top ↑</a>
   </div>
 </footer>
