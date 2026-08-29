@@ -29,5 +29,17 @@ const observer = new IntersectionObserver(
 );
 revealEls.forEach((el) => observer.observe(el));
 
-// footer year
-document.getElementById('year').textContent = new Date().getFullYear();
+// hero photo placeholder fallback (until assets/gavin.jpg exists)
+const heroPhoto = document.getElementById('heroPhoto');
+const heroImg = heroPhoto && heroPhoto.querySelector('img');
+if (heroImg) {
+  heroImg.addEventListener('error', () => heroPhoto.classList.add('is-empty'));
+}
+
+// dates
+const now = new Date();
+document.getElementById('year').textContent = now.getFullYear();
+const nowDate = document.getElementById('nowDate');
+if (nowDate) {
+  nowDate.textContent = now.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+}
