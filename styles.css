@@ -506,6 +506,17 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--rule);
   border-radius: 16px;
   padding: 48px 40px;
+  text-align: center;
+}
+
+.contact-box p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-links,
+.contact-socials {
+  justify-content: center;
 }
 
 .contact-box h2 {
